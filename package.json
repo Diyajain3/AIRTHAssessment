@@ -1,0 +1,38 @@
+{
+  "name": "mini-job-queue-dashboard",
+  "version": "1.0.0",
+  "description": "Mini Job Queue Dashboard - Node.js/Express backend with SQLite and React/Tailwind frontend",
+  "scripts": {
+    "install:backend": "npm --prefix backend install",
+    "install:frontend": "npm --prefix frontend install",
+    "install:all": "npm run install:backend && npm run install:frontend",
+    "dev:backend": "npm --prefix backend run dev",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "start:backend": "npm --prefix backend start",
+    "build:frontend": "npm --prefix frontend run build",
+    "test": "npm --prefix backend test"
+  },
+  "engines": {
+    "node": ">=22.x"
+  },
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "morgan": "^1.10.0"
+  },
+  "keywords": [
+    "job-queue",
+    "concurrency",
+    "sqlite",
+    "express",
+    "react",
+    "tailwind"
+  ],
+  "author": "",
+  "license": "MIT"
+}
